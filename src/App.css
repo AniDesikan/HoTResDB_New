@@ -1,0 +1,262 @@
+/* Navigation bar CSS */
+#navcontainer {
+  position: relative;
+  font-size: xx-large;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+}
+
+#navcontainer li a:hover {
+  background-color: #111;
+}
+
+#login_button,
+#register_button {
+  background-color: #3a78e1;
+  /* Green */
+  border: 1px solid rgb(63, 62, 62);
+  /* Black border */
+  color: white;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 10px;
+}
+
+
+
+/* Index CSS */
+
+#fullintro {
+  display: flex;
+}
+
+#CarouselContainer {
+  flex: 1 0 1%;
+  /* grow: 1, shrink: 0, basis: 50% */
+  position: relative;
+  left: 40px;
+  top: 40px;
+  height: 100vh;
+  /* 100% of the viewport height */
+  overflow: hidden;
+  /* hide any content that overflows the container */
+  padding-right: 10px;
+  border-right: 1px solid rgb(125, 125, 125);
+  /* Black border */
+}
+
+#CarouselContainer .carousel-item img {
+  height: 700px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+div#introtext1 {
+  flex: 1;
+  /* take up the remaining space */
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+/* Sidebar CSS */
+
+.add_button {
+  margin: auto;
+  text-align: center;
+  display: block;
+}
+
+.sidebar,
+.sidebar_header {
+  margin-top: 0.2em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  margin-bottom: 0.2em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  border: solid 1px #D9D9D9;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  background-color: #FFFFFF;
+  font-size: 1em;
+}
+
+.sidebar_header {
+  background-color: #333;
+  color: white;
+}
+
+.sidebar_button {
+  display: inline-block;
+}
+
+div.sidebar_button>input {
+  padding-left: 0em;
+  padding-right: 0em;
+  margin-left: 0.15em;
+  margin-right: 0.15em;
+}
+
+.sidebar_outer {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* float:right; */
+}
+
+.sidebar_inner {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border: solid 1px #D9D9D9;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  /*background-color: #efefef;*/
+}
+
+#loading_image {
+  /*width:100%;
+height:100%;*/
+  display: block;
+  margin-left: 50%;
+  top: 50%;
+  transform: translate(0, -50%);
+  position: fixed;
+  z-index: 9999;
+  /*background: no-repeat center center rgba(0,0,0,0.25)*/
+}
+
+.search_field_row>a#tablink,
+a#tablink2 {
+  color: #3333ff;
+}
+
+/* Queries CSS */
+
+#QueriesFullFlex {
+  display: flex;
+  width: 100%;
+}
+
+#QueriesLeftSide .full-width {
+  flex: 0 0 100%;
+  width: 100%;
+}
+
+/* #QueriesLeftSide {
+  flex: 0 0 100%;
+  width: 70%;
+  padding: 20px;
+} */
+
+#QueriesRightSide {
+  flex: 0 0 30%;
+  position: fixed;
+  right: 0;
+  top: 10;
+  width: 30%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: auto;
+  /* padding: 20px; */
+  /* padding-left: 100px; */
+  /* box-shadow: -2px 0 5px rgba(0,0,0,0.1); Optional: Adds a shadow for better separation */
+  /* background-color: #f8f9fa; Optional: Adds a background color for better readability */
+}
+
+.card-body {
+  overflow-x: auto; /* Add horizontal scroll bar */
+  overflow-y: auto; /* Add vertical scroll bar */
+}
+
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Table CSS */
+
+/* General table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+
+/* Table headers */
+table th {
+  background-color: #4480cf;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Table cells */
+table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Zebra striping for table rows */
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect for table rows */
+table tr:hover {
+  background-color: #ddd;
+}
+
+/* Style the table header to stick to the top when scrolling */
+.table-container {
+  overflow-x: auto;
+}
+
+table th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Add some space above the tables */
+#experiment-html h2 {
+  margin-top: 30px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+/* Styling for the dropdown */
+.search select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  font-size: 16px;
+}
+
+/* Container to give some padding */
+#experiment-html {
+  padding: 20px;
+}

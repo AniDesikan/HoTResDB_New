@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # API requests
+  RewriteCond %{REQUEST_URI} ^/api
+  RewriteRule ^api(.*)$ http://localhost:5000/$1 [P,L]
+
+  # Static files
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # All other requests
+  RewriteRule . /index.html [L]
+</IfModule>
